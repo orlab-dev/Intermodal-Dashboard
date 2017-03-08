@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+#title_style{
+	border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+#login_details{
+	border: 1px solid black;
+    border-collapse: separate;
+    text-align: left;
+}
+#login_button_style{
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 240px;
+  font-size: 20px;
+  color: white;
+  background-color: #325c80;
+}
+#input_style{
+  display: inherit;
+  margin: 0 auto;
+  height: 50px;
+  width: 240px;
+  font-size: 20px;
+  color: white;
+  background-color: #55c0c0;
+}

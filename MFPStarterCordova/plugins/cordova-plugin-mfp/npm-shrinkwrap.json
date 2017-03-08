@@ -1,0 +1,552 @@
+{
+  "name": "cordova-plugin-mfp",
+  "version": "8.0.201601181424",
+  "dependencies": {
+    "archiver": {
+      "version": "0.20.0",
+      "from": "archiver@0.20.0",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/archiver/-/archiver-0.20.0.tgz",
+      "dependencies": {
+        "archiver-utils": {
+          "version": "0.3.0",
+          "from": "archiver-utils@>=0.3.0 <0.4.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/archiver-utils/-/archiver-utils-0.3.0.tgz",
+          "dependencies": {
+            "lazystream": {
+              "version": "0.1.0",
+              "from": "lazystream@>=0.1.0 <0.2.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/lazystream/-/lazystream-0.1.0.tgz",
+              "dependencies": {
+                "readable-stream": {
+                  "version": "1.0.33",
+                  "from": "readable-stream@>=1.0.2 <1.1.0",
+                  "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.33.tgz",
+                  "dependencies": {
+                    "core-util-is": {
+                      "version": "1.0.2",
+                      "from": "core-util-is@>=1.0.0 <1.1.0",
+                      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/core-util-is/-/core-util-is-1.0.2.tgz"
+                    },
+                    "isarray": {
+                      "version": "0.0.1",
+                      "from": "isarray@0.0.1",
+                      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/isarray/-/isarray-0.0.1.tgz"
+                    },
+                    "string_decoder": {
+                      "version": "0.10.31",
+                      "from": "string_decoder@>=0.10.0 <0.11.0",
+                      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/string_decoder/-/string_decoder-0.10.31.tgz"
+                    },
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@>=2.0.1 <2.1.0",
+                      "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "normalize-path": {
+              "version": "2.0.1",
+              "from": "normalize-path@>=2.0.0 <2.1.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/normalize-path/-/normalize-path-2.0.1.tgz"
+            }
+          }
+        },
+        "async": {
+          "version": "1.5.2",
+          "from": "async@>=1.5.0 <1.6.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/async/-/async-1.5.2.tgz"
+        },
+        "buffer-crc32": {
+          "version": "0.2.5",
+          "from": "buffer-crc32@>=0.2.1 <0.3.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/buffer-crc32/-/buffer-crc32-0.2.5.tgz"
+        },
+        "glob": {
+          "version": "6.0.4",
+          "from": "glob@>=6.0.0 <6.1.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/glob/-/glob-6.0.4.tgz",
+          "dependencies": {
+            "inflight": {
+              "version": "1.0.4",
+              "from": "inflight@>=1.0.4 <2.0.0",
+              "resolved": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
+              "dependencies": {
+                "wrappy": {
+                  "version": "1.0.1",
+                  "from": "wrappy@>=1.0.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                }
+              }
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@>=2.0.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+            },
+            "minimatch": {
+              "version": "3.0.0",
+              "from": "minimatch@>=2.0.0 <3.0.0||>=3.0.0 <4.0.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/minimatch/-/minimatch-3.0.0.tgz",
+              "dependencies": {
+                "brace-expansion": {
+                  "version": "1.1.2",
+                  "from": "brace-expansion@>=1.0.0 <2.0.0",
+                  "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/brace-expansion/-/brace-expansion-1.1.2.tgz",
+                  "dependencies": {
+                    "balanced-match": {
+                      "version": "0.3.0",
+                      "from": "balanced-match@>=0.3.0 <0.4.0",
+                      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/balanced-match/-/balanced-match-0.3.0.tgz"
+                    },
+                    "concat-map": {
+                      "version": "0.0.1",
+                      "from": "concat-map@0.0.1",
+                      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/concat-map/-/concat-map-0.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "once": {
+              "version": "1.3.3",
+              "from": "once@>=1.3.0 <2.0.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/once/-/once-1.3.3.tgz",
+              "dependencies": {
+                "wrappy": {
+                  "version": "1.0.1",
+                  "from": "wrappy@>=1.0.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                }
+              }
+            },
+            "path-is-absolute": {
+              "version": "1.0.0",
+              "from": "path-is-absolute@>=1.0.0 <2.0.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/path-is-absolute/-/path-is-absolute-1.0.0.tgz"
+            }
+          }
+        },
+        "lodash": {
+          "version": "3.10.1",
+          "from": "lodash@>=3.10.0 <3.11.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/lodash/-/lodash-3.10.1.tgz"
+        },
+        "readable-stream": {
+          "version": "2.0.5",
+          "from": "readable-stream@>=2.0.0 <2.1.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/readable-stream/-/readable-stream-2.0.5.tgz",
+          "dependencies": {
+            "core-util-is": {
+              "version": "1.0.2",
+              "from": "core-util-is@>=1.0.0 <1.1.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/core-util-is/-/core-util-is-1.0.2.tgz"
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@>=2.0.1 <2.1.0",
+              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+            },
+            "isarray": {
+              "version": "0.0.1",
+              "from": "isarray@0.0.1",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/isarray/-/isarray-0.0.1.tgz"
+            },
+            "process-nextick-args": {
+              "version": "1.0.6",
+              "from": "process-nextick-args@>=1.0.6 <1.1.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/process-nextick-args/-/process-nextick-args-1.0.6.tgz"
+            },
+            "string_decoder": {
+              "version": "0.10.31",
+              "from": "string_decoder@>=0.10.0 <0.11.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/string_decoder/-/string_decoder-0.10.31.tgz"
+            },
+            "util-deprecate": {
+              "version": "1.0.2",
+              "from": "util-deprecate@>=1.0.1 <1.1.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/util-deprecate/-/util-deprecate-1.0.2.tgz"
+            }
+          }
+        },
+        "tar-stream": {
+          "version": "1.3.1",
+          "from": "tar-stream@>=1.3.1 <1.4.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/tar-stream/-/tar-stream-1.3.1.tgz",
+          "dependencies": {
+            "bl": {
+              "version": "1.0.0",
+              "from": "bl@>=1.0.0 <2.0.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/bl/-/bl-1.0.0.tgz"
+            },
+            "end-of-stream": {
+              "version": "1.1.0",
+              "from": "end-of-stream@>=1.0.0 <2.0.0",
+              "resolved": "https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.1.0.tgz",
+              "dependencies": {
+                "once": {
+                  "version": "1.3.3",
+                  "from": "once@>=1.3.0 <1.4.0",
+                  "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/once/-/once-1.3.3.tgz",
+                  "dependencies": {
+                    "wrappy": {
+                      "version": "1.0.1",
+                      "from": "wrappy@>=1.0.0 <2.0.0",
+                      "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "xtend": {
+              "version": "4.0.1",
+              "from": "xtend@>=4.0.0 <5.0.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/xtend/-/xtend-4.0.1.tgz"
+            }
+          }
+        },
+        "zip-stream": {
+          "version": "0.8.0",
+          "from": "zip-stream@>=0.8.0 <0.9.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/zip-stream/-/zip-stream-0.8.0.tgz",
+          "dependencies": {
+            "compress-commons": {
+              "version": "0.4.2",
+              "from": "compress-commons@>=0.4.0 <0.5.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/compress-commons/-/compress-commons-0.4.2.tgz",
+              "dependencies": {
+                "crc32-stream": {
+                  "version": "0.4.0",
+                  "from": "crc32-stream@>=0.4.0 <0.5.0",
+                  "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/crc32-stream/-/crc32-stream-0.4.0.tgz"
+                },
+                "node-int64": {
+                  "version": "0.4.0",
+                  "from": "node-int64@>=0.4.0 <0.5.0",
+                  "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/node-int64/-/node-int64-0.4.0.tgz"
+                },
+                "normalize-path": {
+                  "version": "2.0.1",
+                  "from": "normalize-path@>=2.0.0 <2.1.0",
+                  "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/normalize-path/-/normalize-path-2.0.1.tgz"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "crc": {
+      "version": "3.4.0",
+      "from": "crc@>=3.4.0 <4.0.0",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/crc/-/crc-3.4.0.tgz"
+    },
+    "elementtree": {
+      "version": "0.1.6",
+      "from": "elementtree@0.1.6",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/elementtree/-/elementtree-0.1.6.tgz",
+      "dependencies": {
+        "sax": {
+          "version": "0.3.5",
+          "from": "sax@0.3.5",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/sax/-/sax-0.3.5.tgz"
+        }
+      }
+    },
+    "ibm-strings": {
+      "version": "0.1.1",
+      "from": "ibm-strings@>=0.1.0 <0.2.0",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/ibm-strings/-/ibm-strings-0.1.1.tgz",
+      "dependencies": {
+        "colors": {
+          "version": "1.1.2",
+          "from": "colors@>=1.1.2 <2.0.0",
+          "resolved": "https://registry.npmjs.org/colors/-/colors-1.1.2.tgz"
+        },
+        "nopt": {
+          "version": "2.1.2",
+          "from": "nopt@>=2.1.2 <2.2.0",
+          "resolved": "https://registry.npmjs.org/nopt/-/nopt-2.1.2.tgz",
+          "dependencies": {
+            "abbrev": {
+              "version": "1.0.7",
+              "from": "abbrev@>=1.0.0 <2.0.0",
+              "resolved": "https://registry.npmjs.org/abbrev/-/abbrev-1.0.7.tgz"
+            }
+          }
+        }
+      }
+    },
+    "mfp-config-xml": {
+      "version": "0.0.1",
+      "from": "mfp-config-xml@0.0.1",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/mfp-config-xml/-/mfp-config-xml-0.0.1.tgz",
+      "dependencies": {
+        "findup-sync": {
+          "version": "0.1.3",
+          "from": "https://registry.npmjs.org/findup-sync/-/findup-sync-0.1.3.tgz",
+          "resolved": "https://registry.npmjs.org/findup-sync/-/findup-sync-0.1.3.tgz",
+          "dependencies": {
+            "glob": {
+              "version": "3.2.11",
+              "from": "https://registry.npmjs.org/glob/-/glob-3.2.11.tgz",
+              "resolved": "https://registry.npmjs.org/glob/-/glob-3.2.11.tgz",
+              "dependencies": {
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz",
+                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+                },
+                "minimatch": {
+                  "version": "0.3.0",
+                  "from": "https://registry.npmjs.org/minimatch/-/minimatch-0.3.0.tgz",
+                  "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-0.3.0.tgz",
+                  "dependencies": {
+                    "lru-cache": {
+                      "version": "2.7.0",
+                      "from": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/lru-cache/-/lru-cache-2.7.0.tgz",
+                      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/lru-cache/-/lru-cache-2.7.0.tgz"
+                    },
+                    "sigmund": {
+                      "version": "1.0.1",
+                      "from": "https://registry.npmjs.org/sigmund/-/sigmund-1.0.1.tgz",
+                      "resolved": "https://registry.npmjs.org/sigmund/-/sigmund-1.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "lodash": {
+              "version": "2.4.2",
+              "from": "https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz",
+              "resolved": "https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz"
+            }
+          }
+        },
+        "glob": {
+          "version": "5.0.15",
+          "from": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/glob/-/glob-5.0.15.tgz",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/glob/-/glob-5.0.15.tgz",
+          "dependencies": {
+            "inflight": {
+              "version": "1.0.4",
+              "from": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
+              "resolved": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
+              "dependencies": {
+                "wrappy": {
+                  "version": "1.0.1",
+                  "from": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz",
+                  "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                }
+              }
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz",
+              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+            },
+            "minimatch": {
+              "version": "3.0.0",
+              "from": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/minimatch/-/minimatch-3.0.0.tgz",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/minimatch/-/minimatch-3.0.0.tgz",
+              "dependencies": {
+                "brace-expansion": {
+                  "version": "1.1.1",
+                  "from": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/brace-expansion/-/brace-expansion-1.1.1.tgz",
+                  "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/brace-expansion/-/brace-expansion-1.1.1.tgz",
+                  "dependencies": {
+                    "balanced-match": {
+                      "version": "0.2.0",
+                      "from": "https://registry.npmjs.org/balanced-match/-/balanced-match-0.2.0.tgz",
+                      "resolved": "https://registry.npmjs.org/balanced-match/-/balanced-match-0.2.0.tgz"
+                    },
+                    "concat-map": {
+                      "version": "0.0.1",
+                      "from": "concat-map@0.0.1",
+                      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/concat-map/-/concat-map-0.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "once": {
+              "version": "1.3.2",
+              "from": "https://registry.npmjs.org/once/-/once-1.3.2.tgz",
+              "resolved": "https://registry.npmjs.org/once/-/once-1.3.2.tgz",
+              "dependencies": {
+                "wrappy": {
+                  "version": "1.0.1",
+                  "from": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz",
+                  "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                }
+              }
+            },
+            "path-is-absolute": {
+              "version": "1.0.0",
+              "from": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/path-is-absolute/-/path-is-absolute-1.0.0.tgz",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/path-is-absolute/-/path-is-absolute-1.0.0.tgz"
+            }
+          }
+        },
+        "underscore": {
+          "version": "1.5.2",
+          "from": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/underscore/-/underscore-1.5.2.tgz",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/underscore/-/underscore-1.5.2.tgz"
+        },
+        "verror": {
+          "version": "1.6.0",
+          "from": "https://registry.npmjs.org/verror/-/verror-1.6.0.tgz",
+          "resolved": "https://registry.npmjs.org/verror/-/verror-1.6.0.tgz",
+          "dependencies": {
+            "extsprintf": {
+              "version": "1.2.0",
+              "from": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/extsprintf/-/extsprintf-1.2.0.tgz",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/extsprintf/-/extsprintf-1.2.0.tgz"
+            }
+          }
+        }
+      }
+    },
+    "nopt": {
+      "version": "3.0.6",
+      "from": "nopt@>=3.0.6 <4.0.0",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/nopt/-/nopt-3.0.6.tgz",
+      "dependencies": {
+        "abbrev": {
+          "version": "1.0.7",
+          "from": "abbrev@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/abbrev/-/abbrev-1.0.7.tgz"
+        }
+      }
+    },
+    "npmlog": {
+      "version": "0.0.6",
+      "from": "npmlog@0.0.6",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/npmlog/-/npmlog-0.0.6.tgz",
+      "dependencies": {
+        "ansi": {
+          "version": "0.2.1",
+          "from": "ansi@>=0.2.1 <0.3.0",
+          "resolved": "https://registry.npmjs.org/ansi/-/ansi-0.2.1.tgz"
+        }
+      }
+    },
+    "plist": {
+      "version": "1.1.0",
+      "from": "plist@1.1.0",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/plist/-/plist-1.1.0.tgz",
+      "dependencies": {
+        "base64-js": {
+          "version": "0.0.6",
+          "from": "base64-js@0.0.6",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/base64-js/-/base64-js-0.0.6.tgz"
+        },
+        "xmlbuilder": {
+          "version": "2.2.1",
+          "from": "xmlbuilder@2.2.1",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/xmlbuilder/-/xmlbuilder-2.2.1.tgz",
+          "dependencies": {
+            "lodash-node": {
+              "version": "2.4.1",
+              "from": "lodash-node@>=2.4.1 <2.5.0",
+              "resolved": "https://registry.npmjs.org/lodash-node/-/lodash-node-2.4.1.tgz"
+            }
+          }
+        },
+        "xmldom": {
+          "version": "0.1.21",
+          "from": "xmldom@>=0.1.0 <0.2.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/xmldom/-/xmldom-0.1.21.tgz"
+        },
+        "util-deprecate": {
+          "version": "1.0.0",
+          "from": "util-deprecate@1.0.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/util-deprecate/-/util-deprecate-1.0.0.tgz"
+        }
+      }
+    },
+    "q": {
+      "version": "0.9.7",
+      "from": "q@0.9.7",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/q/-/q-0.9.7.tgz"
+    },
+    "rimraf": {
+      "version": "2.4.4",
+      "from": "rimraf@2.4.4",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/rimraf/-/rimraf-2.4.4.tgz",
+      "dependencies": {
+        "glob": {
+          "version": "5.0.15",
+          "from": "glob@>=5.0.14 <6.0.0",
+          "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/glob/-/glob-5.0.15.tgz",
+          "dependencies": {
+            "inflight": {
+              "version": "1.0.4",
+              "from": "inflight@>=1.0.4 <2.0.0",
+              "resolved": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
+              "dependencies": {
+                "wrappy": {
+                  "version": "1.0.1",
+                  "from": "wrappy@>=1.0.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                }
+              }
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@>=2.0.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
+            },
+            "minimatch": {
+              "version": "3.0.0",
+              "from": "minimatch@>=2.0.0 <3.0.0||>=3.0.0 <4.0.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/minimatch/-/minimatch-3.0.0.tgz",
+              "dependencies": {
+                "brace-expansion": {
+                  "version": "1.1.2",
+                  "from": "brace-expansion@>=1.0.0 <2.0.0",
+                  "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/brace-expansion/-/brace-expansion-1.1.2.tgz",
+                  "dependencies": {
+                    "balanced-match": {
+                      "version": "0.3.0",
+                      "from": "balanced-match@>=0.3.0 <0.4.0",
+                      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/balanced-match/-/balanced-match-0.3.0.tgz"
+                    },
+                    "concat-map": {
+                      "version": "0.0.1",
+                      "from": "concat-map@0.0.1",
+                      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/concat-map/-/concat-map-0.0.1.tgz"
+                    }
+                  }
+                }
+              }
+            },
+            "once": {
+              "version": "1.3.3",
+              "from": "once@>=1.3.0 <2.0.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/once/-/once-1.3.3.tgz",
+              "dependencies": {
+                "wrappy": {
+                  "version": "1.0.1",
+                  "from": "wrappy@>=1.0.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
+                }
+              }
+            },
+            "path-is-absolute": {
+              "version": "1.0.0",
+              "from": "path-is-absolute@>=1.0.0 <2.0.0",
+              "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/path-is-absolute/-/path-is-absolute-1.0.0.tgz"
+            }
+          }
+        }
+      }
+    },
+    "shelljs": {
+      "version": "0.3.0",
+      "from": "shelljs@0.3.0",
+      "resolved": "http://visustar.francelab.fr.ibm.com:8081/nexus/content/groups/mobile-npm-all/shelljs/-/shelljs-0.3.0.tgz"
+    }
+  }
+}
