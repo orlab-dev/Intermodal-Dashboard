@@ -10,20 +10,23 @@
     text-align: left;
 }
 #login_button_style{
+	
   display: block;
   margin: 0 auto;
-  height: 50px;
-  width: 240px;
-  font-size: 20px;
-  color: white;
+  height: 30px;
+  width: 100px;
+  font:bold;
+  font-size: 15px;
+  color: black;
   background-color: #325c80;
 }
 #input_style{
+	border: 1px solid black;
   display: inherit;
   margin: 0 auto;
-  height: 50px;
+  height: 30px;
   width: 240px;
   font-size: 20px;
   color: white;
-  background-color: #55c0c0;
+  background-color: #c0cce8;
 }
